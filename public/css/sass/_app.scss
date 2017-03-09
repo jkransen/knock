@@ -146,5 +146,21 @@ h2 {
   height: 100%;
   width: 100%;
 
+  padding: 50px;
+
+  background-color: rgba(0, 0, 0, .50);
+}
+
+.modal__content {
+  background-color: $fedex-grey;
+
+  border: 1px solid #ccc;
+
   padding: 20px;
+
+  min-height: 480px;
+}
+
+.big-heading {
+  font-size: 36px;
 }

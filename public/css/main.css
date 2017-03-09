@@ -452,7 +452,17 @@ h2 {
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 20px; }
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.modal__content {
+  background-color: #F2F2F2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  min-height: 480px; }
+
+.big-heading {
+  font-size: 36px; }
 
 .delivery-search-bar {
   background: #F2F2F2;

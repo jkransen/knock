@@ -17,4 +17,14 @@ $(function() {
     $('.modal').show();
   });
 
+  $('.modal').click(
+    function(e)
+    {
+      if(e.target.className !== "modal__content")
+      {
+        $(".modal").hide();
+      }
+    }
+  );
+
 });
