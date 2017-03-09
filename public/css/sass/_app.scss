@@ -10,6 +10,66 @@ html {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   font-size: 100%;
+}
+
+main {
+  margin: 0 auto;
+
+  width: 200px;
+
   text-align: center;
+}
+
+.logo {
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.login-form {
+  label {
+    display: block;
+  }
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.login-label,
+.login-field {
+  display: block;
+  width: 100%;
+}
+
+.login-field {
+  border-radius: 5px;
+
+  padding: 5px;
+}
+
+.button {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  background-color: purple;
+
+  color: white;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  border-radius: 5px;
+
+  &.login {
+    margin-top: 40px;
+
+    display: block;
+  }
 }
