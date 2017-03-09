@@ -24,6 +24,7 @@ class RetailController @Inject() (retailLocationService: RetailLocationService) 
   }
 
   def loadRetailLocations = Action {
+
     Ok("")
   }
 
