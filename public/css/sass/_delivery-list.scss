@@ -71,6 +71,8 @@
     padding: 0;
 
     .delivery-address {
+      display: table-row;
+
       .delivery-address-state,
       .delivery-address-details,
       .delivery-address-more,
@@ -78,7 +80,8 @@
       .delivery-address-details__distance,
       .delivery-address-details__time
        {
-        display: inline-block;
+        display: table-cell;
+        vertical-align: middle;
       }
 
       .delivery-address-state {
