@@ -24,11 +24,12 @@ class RetailController @Inject() (retailLocationService: RetailLocationService) 
   }
 
   def loadRetailLocations = Action {
-
-    Ok("")
+    retailLocationService.loadRetailLocations()
+    Ok("loaded locations")
   }
 
   def nearby(lat: Double, lon: Double) = Action {
-    Ok(s"nearby $lat $lon")
+    val nearestLocations = retailLocationService.getNearestLocations(lat, lon)
+    Ok(s"nearby $lat $lon: $nearestLocations")
   }
 }
