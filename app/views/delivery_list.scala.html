@@ -2,7 +2,7 @@
 * This template takes a single argument, a String containing a
 * message to display.
 *@
-@(message: String)
+@(message: String, locations: Map[domain.RetailLocation, Double])
 
 @*
 * Call the `main` template with two arguments. The first
@@ -37,20 +37,21 @@
 
     <div class="delivery-addresses">
         <ul>
+            @for((location, distance) <- locations)  {
             <li>
                 <div class="delivery-address">
                     <div class="delivery-address-state">i</div>
                     <div class="delivery-address-details">
                         <div class="delivery-address-details__contact">
                             <ul>
-                                <li>DHR. M. Martens</li>
-                                <li>Laan van Blois 515</li>
-                                <li class="track-nr">#0123456789</li>
+                                <li>@location.name</li>
+                                <li>@location.locationAddress</li>
+                                <li class="track-nr">@location.locationCity</li>
                             </ul>
                         </div>
                         <div class="delivery-addres-details__distance text-center">
                             <div><img src="assets/img/icon-location.png" alt="" /></div>
-                            <div>1km</div>
+                            <div>@distance.toInt km</div>
                         </div>
                         <div class="delivery-address-details__time text-center">
                             <div><img src="assets/img/icon-time.png" alt="" /></div>
@@ -62,6 +63,7 @@
                     </div>
                 </div>
             </li>
+            }
         </ul>
     </div>
 

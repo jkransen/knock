@@ -1,7 +1,7 @@
 package domain
 
 case class RetailLocation(
-retailerLocationName: String,
+name: String,
 lat: Double, lon: Double,
 networkId: String,
 retailerLocId: String,
