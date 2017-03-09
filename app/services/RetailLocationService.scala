@@ -10,7 +10,8 @@ class RetailLocationService {
 
   def loadRetailLocations(): Unit = {
 
-    val lines = Source.fromFile("app/RetailLocationsList").getLines
+    val lines = Source.fromFile("app/RetailLocationsList.csv").getLines.toStream
     val head = csvParser.parseLine(lines.head)
+
   }
 }
