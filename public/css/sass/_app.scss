@@ -14,18 +14,69 @@ body {
   font-size: 100%;
 }
 
-main {
+h2 {
+  font-size: 19px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.main-login {
   margin: 0 auto;
 
-  width: 200px;
+  width: 300px;
+
+  padding: 0 20px;
 
   text-align: center;
 }
 
-.logo {
-  margin-top: 20px;
-
+.text-center {
   text-align: center;
+}
+
+.top-header {
+  height: 75px;
+
+  padding: 23px 20px;
+
+  background-color: $fedex-purple;
+}
+
+.logo {
+  float: left;
+}
+
+.menu {
+  float: right;
+
+  width: 100px;
+
+  text-align: right;
+}
+
+.menu-button {
+  position: relative;
+
+  top: -5px;
+}
+
+.avatar {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+
+  margin-right: 20px;
+
+  border-radius: 50%;
+  background-color: white;
+}
+
+.avatar-big {
+  width: 120px;
+  height: 120px;
+
+  margin: 70px auto 70px;
 }
 
 .login-form {
@@ -44,18 +95,27 @@ main {
   width: 100%;
 }
 
-.login-field {
-  border-radius: 5px;
+.login-label {
+  position: absolute;
+  left: -999em;
+}
 
-  padding: 5px;
+.login-field {
+  border: 0;
+  background-color: #eee;
+
+  padding: 0 20px;
+
+  height: 50px;
 }
 
 .button {
   display: inline-block;
 
-  padding: 10px 20px;
+  padding: 12px 20px;
+  height: 50px;
 
-  background-color: purple;
+  background-color: $fedex-green;
 
   color: white;
 
@@ -65,11 +125,10 @@ main {
 
   text-decoration: none;
 
-  border-radius: 5px;
-
   &.login {
-    margin-top: 40px;
+    margin-top: 20px;
 
     display: block;
   }
+
 }

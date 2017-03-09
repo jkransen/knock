@@ -1,0 +1,91 @@
+.delivery-search-bar {
+  background: $fedex-grey;
+
+  height: 70px;
+
+  .delivery-search-input {
+    position: relative;
+
+    display: inline-block;
+
+    width: 75%;
+
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    input[type='text'] {
+      font-size: 12px;
+
+      height: 40px;
+
+      line-height: 40px;
+
+      width: 100%;
+
+      padding-left: 20px;
+      padding-right: 40px;
+
+      border: none;
+      border-radius: 40px;
+
+      &::-webkit-input-placeholder {
+        font-size: 10px;
+        color: #000;
+        text-transform: uppercase;
+      }
+
+      &:focus {
+        outline:0px !important;
+      }
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      content: url("../img/icon-search.png");
+      right: 20px;
+      top: 24px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .delivery-search-scan {
+    display: inline-block;
+
+    width: 25%;
+
+    height: 40px;
+
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.delivery-addresses {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    .delivery-address {
+      .delivery-address-state,
+      .delivery-address-details,
+      .delivery-address-more,
+      .delivery-address-details__contact,
+      .delivery-address-details__distance,
+      .delivery-address-details__time
+       {
+        display: inline-block;
+      }
+
+      .delivery-address-state {
+        width: 40px;
+        height: 90px;
+        background: #D0D0D0;
+      }
+    }
+  }
+}
