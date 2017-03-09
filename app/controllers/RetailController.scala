@@ -29,6 +29,7 @@ class RetailController @Inject() (retailLocationService: RetailLocationService) 
 
   def login(lat: Double, lon: Double) = Action {
     val nearestLocations = retailLocationService.getNearestLocations(lat, lon)
-    Ok(s"nearby $lat $lon: $nearestLocations")
+    //Ok(s"nearby $lat $lon: $nearestLocations")
+    Ok(views.html.delivery_list("Your new application is ready."))
   }
 }
