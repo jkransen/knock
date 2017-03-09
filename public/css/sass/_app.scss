@@ -125,13 +125,25 @@ h2 {
 
   text-decoration: none;
 
-  &.login {
+  &.login,
+  &.confirm,
+  &.cancel {
     margin-top: 20px;
 
     display: block;
     width: 100%;
 
     border: 0;
+  }
+
+  &.confirm {
+    background-color: $fedex-blue;
+  }
+
+  &.cancel {
+    background-color: white;
+
+    color: #333;
   }
 
 }
@@ -156,11 +168,16 @@ h2 {
 
   border: 1px solid #ccc;
 
-  padding: 20px;
+  padding: 40px;
 
   min-height: 480px;
 }
 
 .big-heading {
   font-size: 36px;
+  padding: 0;
+}
+
+.small-text {
+  font-size: .75rem;
 }

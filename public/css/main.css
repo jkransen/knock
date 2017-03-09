@@ -438,11 +438,16 @@ h2 {
   font-weight: bold;
   text-align: center;
   text-decoration: none; }
-  .button.login {
+  .button.login, .button.confirm, .button.cancel {
     margin-top: 20px;
     display: block;
     width: 100%;
     border: 0; }
+  .button.confirm {
+    background-color: #0099CC; }
+  .button.cancel {
+    background-color: white;
+    color: #333; }
 
 .modal {
   position: fixed;
@@ -458,11 +463,15 @@ h2 {
 .modal__content {
   background-color: #F2F2F2;
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 40px;
   min-height: 480px; }
 
 .big-heading {
-  font-size: 36px; }
+  font-size: 36px;
+  padding: 0; }
+
+.small-text {
+  font-size: .75rem; }
 
 .delivery-search-bar {
   background: #F2F2F2;
