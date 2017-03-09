@@ -2,7 +2,6 @@ package controllers
 
 import javax.inject._
 
-import play.api._
 import play.api.mvc._
 import services.RetailLocationService
 
@@ -28,7 +27,7 @@ class RetailController @Inject() (retailLocationService: RetailLocationService) 
     Ok("loaded locations")
   }
 
-  def nearby(lat: Double, lon: Double) = Action {
+  def login(lat: Double, lon: Double) = Action {
     val nearestLocations = retailLocationService.getNearestLocations(lat, lon)
     Ok(s"nearby $lat $lon: $nearestLocations")
   }

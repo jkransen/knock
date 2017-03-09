@@ -31,7 +31,7 @@
 
         <main>
             <h1>Log in</h1>
-            <form action="whatever" class="login-form">
+            <form action="/login" class="login-form" name="loginForm">
                 <div class="form-container">
                     <label for="loginUser" class="login-label">Username</label>
                     <input type="text" class="login-field" id="loginUser">
@@ -40,7 +40,9 @@
                     <label for="loginPW" class="login-label">Password</label>
                     <input type="password" class="login-field" id="loginPW">
                 </div>
-                <a href="#FIXME" role="button" class="button login">Log in</a>
+                <input type="hidden" id="lat" name="lat"/>
+                <input type="hidden" id="lon" name="lon"/>
+                <input type="button" role="button" class="button login" onclick="getLocation()" value="Log in">
             </form>
         </main>
 
@@ -58,6 +60,27 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+        <!-- location -->
+        <script>
+            var lat = document.getElementById("lat");
+            var lon = document.getElementById("lon");
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    alert("Geolocation is not supported by this browser.")
+                }
+            }
+            function showPosition(position) {
+//                alert("position: " + position.coords)
+//                lat.value = position.coords.latitude;
+                document.loginForm.lat.value = position.coords.latitude;
+//                lon.value = position.coords.longitude;
+                document.loginForm.lon.value = position.coords.longitude;
+                document.loginForm.submit();
+            }
         </script>
     </body>
 </html>
