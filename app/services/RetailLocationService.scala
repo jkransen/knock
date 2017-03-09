@@ -70,6 +70,27 @@ class RetailLocationService @Inject() (db: Database) {
   }
 
   def parseLocation(rawData: Map[String, String]): RetailLocation = {
-    RetailLocation(rawData("Retailer Location Name"), rawData("Lattitude").replace(',', '.').toDouble, rawData("Longitude").replace(',', '.').toDouble)
+    RetailLocation(rawData("Retailer Location Name"),
+      rawData("Lattitude").replace(',', '.').toDouble,
+      rawData("Longitude").replace(',', '.').toDouble,
+      rawData("Network Id"),rawData("Retailer LocId"),
+      rawData("Agency #"),rawData("Activation Start Date"),
+      rawData("Activation End Date"),rawData("Vacation Start1"),
+      rawData("Vacation End1"),rawData("Vacation Start2"),
+      rawData("Vacation End2"),rawData("Vacation Start3"),
+      rawData("Vacation End3"),rawData("Vacation Start4"),
+      rawData("Vacation End4"),rawData("Holiday1"),
+      rawData("Holiday2"),rawData("Holiday3"),
+      rawData("Holiday4"),rawData("Location Address"),
+      rawData("Location City"),rawData("Location Region"),
+      rawData("Location Postalcode"),rawData("Location Phone"),
+      rawData("Location Email"),rawData("Location Direction"),
+      rawData("Working Days"),rawData("Opening Hr Day1"),
+      rawData("Opening Hr Day2"),rawData("Opening Hr Day3"),
+      rawData("Opening Hr Day4"),rawData("Opening Hr Day5"),
+      rawData("Opening Hr Day6"),rawData("Opening Hr Day7"),
+      rawData("Opening Hrs Holiday"),rawData("Is Active"),
+      rawData("Last Update"),rawData("Unique Key"),
+      rawData("Location Address2"))
   }
 }
