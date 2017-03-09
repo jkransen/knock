@@ -36,7 +36,7 @@ OpeningHrDay5: String,
 OpeningHrDay6: String,
 OpeningHrDay7: String,
 OpeningHrsHoliday: String,
-isActive: String,
+isActive: Boolean,
 lastUpdate: String,
 uniqueKey: String,
 locationAddress2: String) {

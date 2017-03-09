@@ -44,7 +44,7 @@ class RetailLocationService @Inject() (db: Database) {
     } else {
       val maxDistance = nearestSoFar.values.fold(0: Double) { (a: Double, b: Double) => math.max(a, b) }
       nearestSoFar.collect {
-        case (location, distance) if (distance < maxDistance) => (location, distance)
+        case (location, distance) if (location.isActive && distance < maxDistance) => (location, distance)
       }
     }
   }
@@ -89,7 +89,7 @@ class RetailLocationService @Inject() (db: Database) {
       rawData("Opening Hr Day2"),rawData("Opening Hr Day3"),
       rawData("Opening Hr Day4"),rawData("Opening Hr Day5"),
       rawData("Opening Hr Day6"),rawData("Opening Hr Day7"),
-      rawData("Opening Hrs Holiday"),rawData("Is Active"),
+      rawData("Opening Hrs Holiday"),rawData("Is Active").equals("Y"),
       rawData("Last Update"),rawData("Unique Key"),
       rawData("Location Address2"))
   }
