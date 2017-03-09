@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -47,9 +46,13 @@
 
             <div class="delivery-addresses">
               <ul>
+
+                <!-- delivery-confirmed -->
                 <li>
                   <div class="delivery-address">
-                    <div class="delivery-address-state">i</div>
+                    <div class="delivery-address-state delivery-address-state--confirmed">
+                      <img src="img/icon-home.png" alt="">
+                    </div>
                     <div class="delivery-address-details">
                       <div class="delivery-address-details__contact">
                         <ul>
@@ -58,7 +61,7 @@
                           <li class="track-nr">#0123456789</li>
                         </ul>
                       </div>
-                      <div class="delivery-addres-details__distance text-center">
+                      <div class="delivery-address-details__distance text-center">
                         <div><img src="img/icon-location.png" alt="" /></div>
                         <div>1km</div>
                       </div>
@@ -68,15 +71,648 @@
                       </div>
                     </div>
                     <div class="delivery-address-more">
-                      >
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </li>
+                <!-- / delivery-confirmed -->
+
+                <!-- delivery-uknkown -->
+                <li>
+                  <div class="delivery-address">
+                    <div class="delivery-address-state">
+                      <img src="img/icon-status-unknown.png" alt="">
+                    </div>
+                    <div class="delivery-address-details">
+                      <div class="delivery-address-details__contact">
+                        <ul>
+                          <li>DHR. M. Martens</li>
+                          <li>Laan van Blois 515</li>
+                          <li class="track-nr">#0123456789</li>
+                        </ul>
+                      </div>
+                      <div class="delivery-address-details__distance text-center">
+                        <div><img src="img/icon-location.png" alt="" /></div>
+                        <div>1km</div>
+                      </div>
+                      <div class="delivery-address-details__time text-center">
+                        <div><img src="img/icon-time.png" alt="" /></div>
+                        <div>2min</div>
+                      </div>
+                    </div>
+                    <div class="delivery-address-more">
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-more.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- / delivery-uknkown -->
+              </ul>
+            </div>
+
+            <div class="delivery-addresses">
+              <ul>
+                <li>
+                  <div class="delivery-addressess__header">
+                    <div class="delivery-addressess__header-content">
+                      <h3>Relay mondial Bruna</h3>
+                      <div>Peperstraat 120</div>
+                      <div>1345 HH Brussel</div>
+                    </div>
+                    <div class="delivery-addressess__header-count">
+                      <h2>(12)</h2>
+                      <div>packages</div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- delivery-relay -->
+                <li>
+                  <div class="delivery-address">
+                    <div class="delivery-address-state delivery-address-state--relay">
+                      <img src="img/icon-relay.png" alt="">
+                    </div>
+                    <div class="delivery-address-details">
+                      <div class="delivery-address-details__contact">
+                        <ul>
+                          <li>DHR. M. Martens</li>
+                          <li>Laan van Blois 515</li>
+                          <li class="track-nr">#0123456789</li>
+                        </ul>
+                      </div>
+                      <div class="delivery-address-details__distance text-center">
+                        <div><img src="img/icon-location.png" alt="" /></div>
+                        <div>1km</div>
+                      </div>
+                      <div class="delivery-address-details__time text-center">
+                        <div><img src="img/icon-time.png" alt="" /></div>
+                        <div>2min</div>
+                      </div>
+                    </div>
+                    <div class="delivery-address-more">
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-more.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- / delivery-relay -->
+
+                <!-- delivery-relay -->
+                <li>
+                  <div class="delivery-address">
+                    <div class="delivery-address-state delivery-address-state--relay">
+                      <img src="img/icon-relay.png" alt="">
+                    </div>
+                    <div class="delivery-address-details">
+                      <div class="delivery-address-details__contact">
+                        <ul>
+                          <li>DHR. M. Martens</li>
+                          <li>Laan van Blois 515</li>
+                          <li class="track-nr">#0123456789</li>
+                        </ul>
+                      </div>
+                      <div class="delivery-address-details__distance text-center">
+                        <div><img src="img/icon-location.png" alt="" /></div>
+                        <div>1km</div>
+                      </div>
+                      <div class="delivery-address-details__time text-center">
+                        <div><img src="img/icon-time.png" alt="" /></div>
+                        <div>2min</div>
+                      </div>
+                    </div>
+                    <div class="delivery-address-more">
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-more.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- / delivery-relay -->
+
+                <!-- delivery-relay -->
+                <li>
+                  <div class="delivery-address">
+                    <div class="delivery-address-state delivery-address-state--relay">
+                      <img src="img/icon-relay.png" alt="">
+                    </div>
+                    <div class="delivery-address-details">
+                      <div class="delivery-address-details__contact">
+                        <ul>
+                          <li>DHR. M. Martens</li>
+                          <li>Laan van Blois 515</li>
+                          <li class="track-nr">#0123456789</li>
+                        </ul>
+                      </div>
+                      <div class="delivery-address-details__distance text-center">
+                        <div><img src="img/icon-location.png" alt="" /></div>
+                        <div>1km</div>
+                      </div>
+                      <div class="delivery-address-details__time text-center">
+                        <div><img src="img/icon-time.png" alt="" /></div>
+                        <div>2min</div>
+                      </div>
+                    </div>
+                    <div class="delivery-address-more">
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-more.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- / delivery-relay -->
+              </ul>
+            </div>
+
+            <div class="delivery-addresses">
+              <ul>
+                <li>
+                  <div class="delivery-addressess__header">
+                    <div class="delivery-addressess__header-content">
+                      <h3>Relay mondial Primera</h3>
+                      <div>Hoofdweg 88</div>
+                      <div>1305 HH Brussel</div>
+                    </div>
+                    <div class="delivery-addressess__header-count">
+                      <h2>(18)</h2>
+                      <div>packages</div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- delivery-relay -->
+                <li>
+                  <div class="delivery-address">
+                    <div class="delivery-address-state delivery-address-state--relay">
+                      <img src="img/icon-relay.png" alt="">
+                    </div>
+                    <div class="delivery-address-details">
+                      <div class="delivery-address-details__contact">
+                        <ul>
+                          <li>DHR. M. Martens</li>
+                          <li>Laan van Blois 515</li>
+                          <li class="track-nr">#0123456789</li>
+                        </ul>
+                      </div>
+                      <div class="delivery-address-details__distance text-center">
+                        <div><img src="img/icon-location.png" alt="" /></div>
+                        <div>1km</div>
+                      </div>
+                      <div class="delivery-address-details__time text-center">
+                        <div><img src="img/icon-time.png" alt="" /></div>
+                        <div>2min</div>
+                      </div>
+                    </div>
+                    <div class="delivery-address-more">
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-more.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- / delivery-relay -->
+
+                <!-- delivery-relay -->
+                <li>
+                  <div class="delivery-address">
+                    <div class="delivery-address-state delivery-address-state--relay">
+                      <img src="img/icon-relay.png" alt="">
+                    </div>
+                    <div class="delivery-address-details">
+                      <div class="delivery-address-details__contact">
+                        <ul>
+                          <li>DHR. M. Martens</li>
+                          <li>Laan van Blois 515</li>
+                          <li class="track-nr">#0123456789</li>
+                        </ul>
+                      </div>
+                      <div class="delivery-address-details__distance text-center">
+                        <div><img src="img/icon-location.png" alt="" /></div>
+                        <div>1km</div>
+                      </div>
+                      <div class="delivery-address-details__time text-center">
+                        <div><img src="img/icon-time.png" alt="" /></div>
+                        <div>2min</div>
+                      </div>
+                    </div>
+                    <div class="delivery-address-more">
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-more.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- / delivery-relay -->
+
+                <!-- delivery-relay -->
+                <li>
+                  <div class="delivery-address">
+                    <div class="delivery-address-state delivery-address-state--relay">
+                      <img src="img/icon-relay.png" alt="">
+                    </div>
+                    <div class="delivery-address-details">
+                      <div class="delivery-address-details__contact">
+                        <ul>
+                          <li>DHR. M. Martens</li>
+                          <li>Laan van Blois 515</li>
+                          <li class="track-nr">#0123456789</li>
+                        </ul>
+                      </div>
+                      <div class="delivery-address-details__distance text-center">
+                        <div><img src="img/icon-location.png" alt="" /></div>
+                        <div>1km</div>
+                      </div>
+                      <div class="delivery-address-details__time text-center">
+                        <div><img src="img/icon-time.png" alt="" /></div>
+                        <div>2min</div>
+                      </div>
+                    </div>
+                    <div class="delivery-address-more">
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-more.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- / delivery-relay -->
+              </ul>
+            </div>
+
+            <div class="delivery-addresses">
+              <ul>
+                <li>
+                  <div class="delivery-addressess__header">
+                    <div class="delivery-addressess__header-content">
+                      <h3>No delivery</h3>
+                    </div>
+                    <div class="delivery-addressess__header-count">
+                      <h2>(07)</h2>
+                      <div>packages</div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- delivery-no-delivery -->
+                <li>
+                  <div class="delivery-address">
+                    <div class="delivery-address-state delivery-address-state--no-delivery">
+                      <img src="img/icon-not-delivered.png" alt="">
+                    </div>
+                    <div class="delivery-address-details">
+                      <div class="delivery-address-details__contact">
+                        <ul>
+                          <li>DHR. M. Martens</li>
+                          <li>Laan van Blois 515</li>
+                          <li class="track-nr">#0123456789</li>
+                        </ul>
+                      </div>
+                      <div class="delivery-address-details__distance text-center">
+                        <div><img src="img/icon-location.png" alt="" /></div>
+                        <div>1km</div>
+                      </div>
+                      <div class="delivery-address-details__time text-center">
+                        <div><img src="img/icon-time.png" alt="" /></div>
+                        <div>2min</div>
+                      </div>
+                    </div>
+                    <div class="delivery-address-more">
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-more.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- / delivery-no-delivery -->
+
+                <!-- delivery-no-delivery -->
+                <li>
+                  <div class="delivery-address">
+                    <div class="delivery-address-state delivery-address-state--no-delivery">
+                      <img src="img/icon-not-delivered.png" alt="">
+                    </div>
+                    <div class="delivery-address-details">
+                      <div class="delivery-address-details__contact">
+                        <ul>
+                          <li>DHR. M. Martens</li>
+                          <li>Laan van Blois 515</li>
+                          <li class="track-nr">#0123456789</li>
+                        </ul>
+                      </div>
+                      <div class="delivery-address-details__distance text-center">
+                        <div><img src="img/icon-location.png" alt="" /></div>
+                        <div>1km</div>
+                      </div>
+                      <div class="delivery-address-details__time text-center">
+                        <div><img src="img/icon-time.png" alt="" /></div>
+                        <div>2min</div>
+                      </div>
+                    </div>
+                    <div class="delivery-address-more">
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-more.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- / delivery-no-delivery -->
+
+                <!-- delivery-no-delivery -->
+                <li>
+                  <div class="delivery-address">
+                    <div class="delivery-address-state delivery-address-state--no-delivery">
+                      <img src="img/icon-not-delivered.png" alt="">
+                    </div>
+                    <div class="delivery-address-details">
+                      <div class="delivery-address-details__contact">
+                        <ul>
+                          <li>DHR. M. Martens</li>
+                          <li>Laan van Blois 515</li>
+                          <li class="track-nr">#0123456789</li>
+                        </ul>
+                      </div>
+                      <div class="delivery-address-details__distance text-center">
+                        <div><img src="img/icon-location.png" alt="" /></div>
+                        <div>1km</div>
+                      </div>
+                      <div class="delivery-address-details__time text-center">
+                        <div><img src="img/icon-time.png" alt="" /></div>
+                        <div>2min</div>
+                      </div>
+                    </div>
+                    <div class="delivery-address-more">
+                      <button class="js-dropdown">
+                        <img src="img/icon-more.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="delivery-address--more-content">
+                    <div class="delivery-toolbar">
+                      <div class="delivery-toolbar__delivered">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-delivered.png" alt=""></div>
+                          <div>delivered</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__notin">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-notin.png" alt=""></div>
+                          <div>not in</div>
+                        </button>
+                      </div>
+                      <div class="delivery-toolbar__more">
+                        <button>
+                          <div><img src="img/icon-delivery-tb-more.png" alt=""></div>
+                          <div>more</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- / delivery-no-delivery -->
               </ul>
             </div>
 
         </main>
 
+        <div class="modal">
+          <div class="modal__content">
+            bla
+          </div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
