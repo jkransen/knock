@@ -71,7 +71,8 @@
     padding: 0;
 
     .delivery-address {
-      display: table-row;
+      display: table;
+      width: 100%;
 
       .delivery-address-state,
       .delivery-address-details,
@@ -79,7 +80,7 @@
       .delivery-address-details__contact,
       .delivery-address-details__distance,
       .delivery-address-details__time
-       {
+      {
         display: table-cell;
         vertical-align: middle;
       }
@@ -88,6 +89,16 @@
         width: 40px;
         height: 90px;
         background: #D0D0D0;
+      }
+
+      .delivery-address-details {
+        height: 90px;
+        display: table;
+      }
+
+      .delivery-address-details__contact {
+        font-size: 14px;
+        color: #58595B;
       }
     }
   }

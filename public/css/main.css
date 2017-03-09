@@ -440,7 +440,9 @@ h2 {
   text-decoration: none; }
   .button.login {
     margin-top: 20px;
-    display: block; }
+    display: block;
+    width: 100%;
+    border: 0; }
 
 .delivery-search-bar {
   background: #F2F2F2;
@@ -487,7 +489,8 @@ h2 {
   list-style: none;
   padding: 0; }
   .delivery-addresses ul .delivery-address {
-    display: table-row; }
+    display: table;
+    width: 100%; }
     .delivery-addresses ul .delivery-address .delivery-address-state,
     .delivery-addresses ul .delivery-address .delivery-address-details,
     .delivery-addresses ul .delivery-address .delivery-address-more,
@@ -500,3 +503,9 @@ h2 {
       width: 40px;
       height: 90px;
       background: #D0D0D0; }
+    .delivery-addresses ul .delivery-address .delivery-address-details {
+      height: 90px;
+      display: table; }
+    .delivery-addresses ul .delivery-address .delivery-address-details__contact {
+      font-size: 14px;
+      color: #58595B; }
