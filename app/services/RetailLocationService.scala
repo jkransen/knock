@@ -12,7 +12,7 @@ import scala.io.Source
 class RetailLocationService @Inject() (db: Database) {
 
   val csvParser = new CSVParser()
-  val numNearest = 1
+  val numNearest = 5
 
   var locations: List[RetailLocation] = null
 
