@@ -10,6 +10,7 @@ $(function() {
     $this.closest('li').find('.delivery-address--more-content').slideToggle(500);
   });
 
+  // show/hide modal
 
   $('.modal').hide();
 
@@ -17,12 +18,9 @@ $(function() {
     $('.modal').show();
   });
 
-  $('.modal').click(
-    function(e)
-    {
-      if(e.target.className !== "modal__content")
-      {
-        $(".modal").hide();
+  $('.modal').click( function (e) {
+      if(e.target.className !== 'modal__content') {
+        $('.modal').hide();
       }
     }
   );
